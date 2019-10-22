@@ -14,6 +14,17 @@ public class LagNyBruker {
         this.epost = epost;
     }
 
+    public LagNyBruker(){}
+
+
+    public void LeggTilNyBruker(Bruker bruker, String brukernavn, String passord, String epost, Boolean brukerErKlubb){
+
+    }
+
+
+
+
+
     public String getBrukernavn(){
         return brukernavn;
     }
@@ -43,6 +54,7 @@ public class LagNyBruker {
 
         if (epost.contains("@")){
             this.epost = epost;
+
         }
         else{
             System.out.println("Ugyldig epost");
