@@ -1,8 +1,8 @@
 public class LagNyBruker {
 
-    Bruker bruker;
-    String brukernavn, passord, epost;
-    Boolean brukerErKlubb;
+    private Bruker bruker;
+    private String brukernavn, passord, epost;
+    private Boolean brukerErKlubb;
 
 
     public LagNyBruker(Bruker bruker, String brukernavn, String passord, String epost, Boolean brukerErKlubb){
@@ -55,7 +55,7 @@ public class LagNyBruker {
     }
 
     public void setBrukerErKlubb(Boolean brukerErKlubb){
-        this.brukerErKlubb = brukerErKlubb; 
+        this.brukerErKlubb = brukerErKlubb;
     }
 
 
