@@ -1,13 +1,11 @@
 plugins {
     id 'java'
     id 'application'
-    id 'org.openjfx.javafxplugin' version '8.1.1'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
 }
 
 group 'SoftwareEngeneering_Gruppe3'
 version '1.0-SNAPSHOT'
-
-sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
@@ -18,8 +16,6 @@ dependencies {
 }
 
 javafx {
-    version = "13"
+    version = "11.0.2"
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
-
-mainClassName = 'Main'
