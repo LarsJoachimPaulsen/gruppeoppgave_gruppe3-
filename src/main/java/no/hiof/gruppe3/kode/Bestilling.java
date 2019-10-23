@@ -25,10 +25,22 @@ public class Bestilling {
             }
             else{
                 antallBilletter -= velgAntallBilleter;
-                // sende til betalingsside, returnerer godkjent ikke godkjent
-                         // Send bekreftelse(bruker) <-- sender mail med billett/ evt sms.
 
-                return "Bestilling vellykket";
+                boolean godkjentBetaling = sendTilBankAccept(new Bruker("abs", "def", 27));
+                // sende til betalingsside, returnerer godkjent ikke godkjent
+                if (godkjentBetaling){
+                    sendBekreftelse(new Bruker("abs", "def", 27));
+
+                    // Send bekreftelse(bruker) <-- sender mail med billett/ evt sms.
+
+                    return "Bestilling vellykket";
+                }
+
+                else {
+                    return "Noe gikk galt";
+
+                }
+
             }
         }
         else{
@@ -38,9 +50,16 @@ public class Bestilling {
 
     }
 
-    private void sendTilBankAccept(Bruker bruker){
+    private void sendBekreftelse(Bruker bruker) {
 
+        // sender bekreftelse på mail
+    }
 
+    private Boolean sendTilBankAccept(Bruker bruker){
+
+        // sender brukeren videre til en sikker bankside. Denne vil returnere true dersom betalingen blir vellykket.
+
+        return true;
 
     }
 }
