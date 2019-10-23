@@ -5,8 +5,33 @@ public class Bestilling {
     private int antallBilletter = 100;
 
 
-    public int bestillBillet(int velgAntallBilleter) {
+    /* her bør vi senere også sende med noe som bruker? sende dette videre til en ekstern betalingsside, som returnerer
+    en boolean (True for godkjent, False for ikke godkjent), bruker returverdien her til å sende billetter på mail/sms.
+    At kort blir avvist vil vises hos tredjepart.
+     */
+    public String bestillBillet(int velgAntallBilleter) {
 
-        return 1;
+
+        if(antallBilletter > 0){
+
+
+
+            if(velgAntallBilleter > antallBilletter){
+                return "Det finnes desverre ikke nok billetter";
+
+            }
+            else{
+                antallBilletter -= velgAntallBilleter;
+                // sende til betalingsside, returnerer godkjent ikke godkjent
+                         // Send bekreftelse(bruker) <-- sender mail med billett/ evt sms.
+
+                return "Bestilling vellykket";
+            }
+        }
+        else{
+            return "Det er desverre tomt for billetter";
+        }
+
+
     }
 }

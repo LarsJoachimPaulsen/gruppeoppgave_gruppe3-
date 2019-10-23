@@ -1,4 +1,4 @@
-public class Bruker {
+public class Bruker extends LagNyBruker {
 
     String etterNavn;
     String fornavn;
