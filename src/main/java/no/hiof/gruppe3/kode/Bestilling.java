@@ -26,10 +26,10 @@ public class Bestilling {
             else{
                 antallBilletter -= velgAntallBilleter;
 
-                boolean godkjentBetaling = sendTilBankAccept(new Bruker("abs", "def", 27));
+                boolean godkjentBetaling = sendTilBankAccept(new Bruker("abs", "def", "123@gmail.com" ,27));
                 // sende til betalingsside, returnerer godkjent ikke godkjent
                 if (godkjentBetaling){
-                    sendBekreftelse(new Bruker("abs", "def", 27));
+                    sendBekreftelse(new Bruker("abs", "def", "123@gmail.com", 27));
 
                     // Send bekreftelse(bruker) <-- sender mail med billett/ evt sms.
 
@@ -51,6 +51,8 @@ public class Bestilling {
     }
 
     private void sendBekreftelse(Bruker bruker) {
+
+        String epost = bruker.getEpost();
 
         // sender bekreftelse på mail
         // finne en gratis host vi kan bruke til å sende ut mailer?
