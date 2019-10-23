@@ -1,10 +1,10 @@
 package no.hiof.gruppe3.model;
 
-public class Bestilling {
+public class Bestilling extends SkrivTilServer {
 
     private long kortnr;
     private short cvc;
-    private int antallBilletter = 100;
+    private int antallBilletter = 100, pris;
 
 
     /* her bør vi senere også sende med noe som bruker? sende dette videre til en ekstern betalingsside, som returnerer
@@ -13,11 +13,7 @@ public class Bestilling {
      */
     public String bestillBillet(int velgAntallBilleter) {
 
-
-
         if(antallBilletter > 0){
-
-
 
             if(velgAntallBilleter > antallBilletter){
                 return "Det finnes desverre ikke nok billetter";
@@ -25,6 +21,8 @@ public class Bestilling {
             }
             else{
                 antallBilletter -= velgAntallBilleter;
+
+                kalkulerPris(velgAntallBilleter);
 
                 boolean godkjentBetaling = sendTilBankAccept(new Bruker("abs", "def", "123@gmail.com" ,27));
                 // sende til betalingsside, returnerer godkjent ikke godkjent
@@ -48,6 +46,17 @@ public class Bestilling {
         else{
             return "Det er desverre tomt for billetter";
         }
+
+
+    }
+
+    public int kalkulerPris(int antallBilleter) {
+
+        int prisPerBillet = lesFraServer("CVC/billettinformasjon.cvc");
+
+        int totalPris = prisPerBillet * antallBilleter;
+
+        return totalPris;
 
 
     }
