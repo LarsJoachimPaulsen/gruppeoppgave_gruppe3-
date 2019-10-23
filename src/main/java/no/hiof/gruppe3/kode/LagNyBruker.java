@@ -41,6 +41,11 @@ public class LagNyBruker extends Bruker {
         return brukerErKlubb;
     }
 
+    public String getPassord(){
+
+        return passord;
+    }
+
     public void setBrukerNavn(String brukernavn){
         this.brukernavn = brukernavn;
     }
