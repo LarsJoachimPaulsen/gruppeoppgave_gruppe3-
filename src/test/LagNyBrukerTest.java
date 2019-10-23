@@ -1,4 +1,4 @@
-import no.hiof.gruppe3.kode.LagNyBruker;
+import no.hiof.gruppe3.model.LagNyBruker;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

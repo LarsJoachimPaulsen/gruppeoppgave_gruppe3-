@@ -1,4 +1,4 @@
-import no.hiof.gruppe3.kode.Bestilling;
+import no.hiof.gruppe3.model.Bestilling;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
