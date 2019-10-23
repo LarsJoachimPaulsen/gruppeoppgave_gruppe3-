@@ -53,6 +53,7 @@ public class Bestilling {
     private void sendBekreftelse(Bruker bruker) {
 
         // sender bekreftelse på mail
+        // finne en gratis host vi kan bruke til å sende ut mailer?
     }
 
     private Boolean sendTilBankAccept(Bruker bruker){
