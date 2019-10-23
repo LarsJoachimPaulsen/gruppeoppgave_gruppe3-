@@ -1,7 +1,9 @@
 package no.hiof.gruppe3.kode;
 
 
+// merge bruker og LagNyBruker, heller lage nyBruker som en metode.
 
+// passord må hashes! MD5?
 public class Bruker  {
 
     private String etternavn, fornavn, epost;
