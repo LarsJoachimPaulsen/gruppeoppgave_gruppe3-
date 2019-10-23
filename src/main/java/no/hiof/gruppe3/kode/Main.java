@@ -1,7 +1,5 @@
 
-package no.hiof.gruppe3.Kode;
-import javafx.application.Application;
-
+package no.hiof.gruppe3.kode;
 
 
 public class Main {

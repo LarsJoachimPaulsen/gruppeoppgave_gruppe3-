@@ -1,9 +1,4 @@
-package no.hiof.gruppe3.Kode;
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+package no.hiof.gruppe3.kode;
 
 public abstract class SkrivTilServer {
 

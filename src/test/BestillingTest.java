@@ -1,6 +1,7 @@
+import no.hiof.gruppe3.kode.Bestilling;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static junit.framework.TestCase.assertEquals;
 
 class BestillingTest {
 
