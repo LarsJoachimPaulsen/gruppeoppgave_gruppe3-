@@ -7,44 +7,29 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <VBox prefHeight="200.0" prefWidth="100.0">
-         <children>
-            <HBox prefHeight="100.0" prefWidth="200.0">
-               <children>
-                  <TextField />
-                  <Button mnemonicParsing="false" text="Button" />
-               </children>
-            </HBox>
-         </children>
-      </VBox>
-      <VBox prefHeight="200.0" prefWidth="100.0">
-         <children>
-            <HBox prefHeight="100.0" prefWidth="200.0">
-               <children>
-                  <VBox prefHeight="200.0" prefWidth="100.0">
-                     <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                     </children>
-                  </VBox>
-                  <VBox prefHeight="200.0" prefWidth="100.0">
-                     <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                     </children>
-                  </VBox>
-                  <VBox prefHeight="200.0" prefWidth="100.0">
-                     <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                     </children>
-                  </VBox>
-               </children>
-            </HBox>
-         </children>
-      </VBox>
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea">
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                        <TextField />
+                        <Button mnemonicParsing="false" text="Button" />
+                  </HBox>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                        </VBox>
+                  </HBox>
+            </VBox>
+      </HBox>
 </AnchorPane>
