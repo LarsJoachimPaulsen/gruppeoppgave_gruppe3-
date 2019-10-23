@@ -11,7 +11,7 @@ public abstract class SkrivTilServer {
         String cvsSplitBy = ",";
 
 
-        try{
+        /*try{
             BufferedReader lesFraFil = new BufferedReader(new FileReader(String filsti)){
 
                 while((line = lesFraFil.readLine() != null))
@@ -20,7 +20,7 @@ public abstract class SkrivTilServer {
         }
         catch(FileNotFoundException FNFE){
             FNFE.printStackTrace();
-        }
+        }*/
 
 
     }
