@@ -24,6 +24,7 @@ public class Bestilling extends SkrivTilServer {
 
                 kalkulerPris(velgAntallBilleter);
 
+                // kan flyttes til kalkulerPris?
                 boolean godkjentBetaling = sendTilBankAccept(new Bruker("abs", "def", "123@gmail.com" ,27));
                 // sende til betalingsside, returnerer godkjent ikke godkjent
                 if (godkjentBetaling){
