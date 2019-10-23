@@ -3,21 +3,21 @@ package no.hiof.gruppe3.kode;
 public class LagNyBruker extends Bruker {
 
     private Bruker bruker;
-    private String brukernavn, passord, epost;
+    private String brukernavn, passord;
     private Boolean brukerErKlubb;
 
 
     public LagNyBruker(
-            String fornavn, String etternavn, int alder,
-            Bruker bruker, String brukernavn, String passord, String epost, Boolean brukerErKlubb
+            String fornavn, String etternavn, String epost, int alder,
+            Bruker bruker, String brukernavn, String passord,  Boolean brukerErKlubb
 
     ){
-        super(fornavn, etternavn, alder);
+        super(fornavn, etternavn, epost ,alder );
         this.bruker = bruker;
         this.brukerErKlubb = brukerErKlubb;
         this.brukernavn = brukernavn;
         this.passord = passord;
-        this.epost = epost;
+
 
     }
 
@@ -32,11 +32,6 @@ public class LagNyBruker extends Bruker {
     public String getBrukernavn(){
         return brukernavn;
     }
-
-    public String getEpost(){
-        return epost;
-    }
-
 
     public Bruker getBruker(){
         return bruker;
@@ -54,17 +49,6 @@ public class LagNyBruker extends Bruker {
         this.passord = passord;
     }
 
-    public void setEpost(String epost){
-
-        if (epost.contains("@")){
-            this.epost = epost;
-
-        }
-        else{
-            System.out.println("Ugyldig epost");
-        }
-
-    }
 
     public void setBruker(Bruker bruker){
         this.bruker = bruker;
