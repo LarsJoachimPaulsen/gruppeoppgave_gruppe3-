@@ -1,4 +1,4 @@
-package no.hiof.gruppe3;
+package no.hiof.gruppe3.Kode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

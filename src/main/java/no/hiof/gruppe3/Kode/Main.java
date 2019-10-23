@@ -1,5 +1,5 @@
 
-package no.hiof.gruppe3;
+package no.hiof.gruppe3.Kode;
 import javafx.application.Application;
 
 

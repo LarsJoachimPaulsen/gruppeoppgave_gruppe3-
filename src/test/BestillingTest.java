@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-//dfhsh
+
 class BestillingTest {
 
     Bestilling bestilling = new Bestilling();
