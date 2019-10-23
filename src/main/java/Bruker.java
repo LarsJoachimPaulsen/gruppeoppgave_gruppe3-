@@ -1,7 +1,14 @@
-public class Bruker extends LagNyBruker {
+public class Bruker  {
 
-    String etterNavn;
+    String etternavn;
     String fornavn;
     int alder;
 
+    public Bruker(String etternavn, String fornavn, int alder){
+        this.etternavn = etternavn;
+        this.fornavn = fornavn;
+        this.alder = alder;
+
+    }
 }
+

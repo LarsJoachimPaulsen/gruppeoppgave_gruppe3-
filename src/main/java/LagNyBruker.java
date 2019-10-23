@@ -1,17 +1,22 @@
-public class LagNyBruker {
+public class LagNyBruker extends Bruker {
 
     private Bruker bruker;
     private String brukernavn, passord, epost;
     private Boolean brukerErKlubb;
 
 
-    public LagNyBruker(Bruker bruker, String brukernavn, String passord, String epost, Boolean brukerErKlubb){
+    public LagNyBruker(
+            String fornavn, String etternavn, int alder,
+            Bruker bruker, String brukernavn, String passord, String epost, Boolean brukerErKlubb
 
+    ){
+        super(fornavn, etternavn, alder);
         this.bruker = bruker;
         this.brukerErKlubb = brukerErKlubb;
         this.brukernavn = brukernavn;
         this.passord = passord;
         this.epost = epost;
+
     }
 
     public LagNyBruker(){}
@@ -20,9 +25,6 @@ public class LagNyBruker {
     public void LeggTilNyBruker(Bruker bruker, String brukernavn, String passord, String epost, Boolean brukerErKlubb){
 
     }
-
-
-
 
 
     public String getBrukernavn(){
