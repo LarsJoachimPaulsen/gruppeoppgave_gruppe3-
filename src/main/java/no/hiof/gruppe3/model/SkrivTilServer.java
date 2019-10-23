@@ -1,26 +1,50 @@
 package no.hiof.gruppe3.model;
 
+import java.io.*;
+
 public abstract class SkrivTilServer {
 
-    public void lesFraServer(){
-        String filsti = "CVC/billettinformasjon.cvc";
-        String line = "";
-        String cvsSplitBy = ",";
+    public int lesFraServer(String filsti){
+        String linje = " ";
+        String cvsSplittVed = ";";
 
-
-        /*
         try{
-            BufferedReader lesFraFil = new BufferedReader(new FileReader(String filsti)){
+            BufferedReader lesFraFil = new BufferedReader(new FileReader(filsti));
 
-                while((line = lesFraFil.readLine() != null))
+            while (( linje = lesFraFil.readLine()) != null){
 
+                String[] output = linje.split(cvsSplittVed);
+
+                return Integer.parseInt(output[0]);
             }
+
+        }
+        catch(FileNotFoundException FNFE){
+            FNFE.printStackTrace();
+
+            return 0;
+        }
+        catch (IOException IOE){
+            IOE.printStackTrace();
+
+            return 0;
+        }
+        return 0;
+    }
+
+    /*
+    public void skrivTilServer(String filsti){
+
+        try{
+            BufferedWriter skrivTilServer = new BufferedWriter(new FileWriter());
+
+            skrivTilServer.write();
+
         }
         catch(FileNotFoundException FNFE){
             FNFE.printStackTrace();
         }
- */
 
-    }
+    } */
 
 }
