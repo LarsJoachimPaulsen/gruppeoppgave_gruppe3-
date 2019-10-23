@@ -1,4 +1,4 @@
-package no.hiof.gruppe3.kode;
+package no.hiof.gruppe3.model;
 
 public class Innstillinger {
 
