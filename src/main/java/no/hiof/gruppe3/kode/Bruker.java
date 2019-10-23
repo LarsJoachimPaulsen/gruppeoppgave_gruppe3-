@@ -52,5 +52,7 @@ public class Bruker  {
     public void setAlder(int alder) {
         this.alder = alder;
     }
+
+
 }
 

@@ -9,11 +9,10 @@ public class LagNyBruker extends Bruker {
 
     public LagNyBruker(
             String fornavn, String etternavn, String epost, int alder,
-            Bruker bruker, String brukernavn, String passord,  Boolean brukerErKlubb
+            String brukernavn, String passord,  Boolean brukerErKlubb
 
     ){
         super(fornavn, etternavn, epost ,alder );
-        this.bruker = bruker;
         this.brukerErKlubb = brukerErKlubb;
         this.brukernavn = brukernavn;
         this.passord = passord;

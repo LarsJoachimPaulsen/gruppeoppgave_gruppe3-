@@ -29,6 +29,8 @@ public class Bestilling {
                 boolean godkjentBetaling = sendTilBankAccept(new Bruker("abs", "def", "123@gmail.com" ,27));
                 // sende til betalingsside, returnerer godkjent ikke godkjent
                 if (godkjentBetaling){
+
+                    // new Bruker er placeholder.
                     sendBekreftelse(new Bruker("abs", "def", "123@gmail.com", 27));
 
                     // Send bekreftelse(bruker) <-- sender mail med billett/ evt sms.
