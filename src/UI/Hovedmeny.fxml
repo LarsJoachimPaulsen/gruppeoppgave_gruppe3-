@@ -8,18 +8,15 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1">
       <HBox alignment="CENTER" prefHeight="160.0" prefWidth="296.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
-         <children>
             <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="460.0" spacing="50.0">
                <HBox.margin>
                   <Insets />
                </HBox.margin>
-               <children>
                   <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="250.0" text="Nye Arangementer" textAlignment="CENTER">
                      <VBox.margin>
                         <Insets />
@@ -36,7 +33,6 @@
                         <Font size="22.0" />
                      </font>
                   </Button>
-               </children>
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -44,7 +40,5 @@
                   <Insets top="75.0" />
                </padding>
             </VBox>
-         </children>
       </HBox>
-   </children>
 </AnchorPane>
