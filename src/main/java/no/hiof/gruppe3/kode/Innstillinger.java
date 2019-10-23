@@ -4,7 +4,7 @@ public class Innstillinger {
 
     public void endrePassord(LagNyBruker bruker, String passord, String nyttPassord, String bekreftNyttPassord){
 
-        if(passordSjekk(bruker.getPassord(), passord))){
+        if(passordSjekk(bruker.getPassord(), passord)){
 
             if (nyttPassord.equals(bekreftNyttPassord)){
 
