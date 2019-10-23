@@ -12,6 +12,7 @@ public class Bestilling {
     public String bestillBillet(int velgAntallBilleter) {
 
 
+
         if(antallBilletter > 0){
 
 
