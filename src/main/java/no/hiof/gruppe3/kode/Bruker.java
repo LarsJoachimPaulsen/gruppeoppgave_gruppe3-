@@ -17,6 +17,10 @@ public class Bruker  {
 
     }
 
+    public Bruker(){
+
+    }
+
     public String getEtternavn() {
         return etternavn;
     }
